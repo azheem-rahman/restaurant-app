@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <div className="flex mt-2">
+    <div className="flex">
       <div className="w-1/2 flex justify-left items-center">
         <Link href="/">
           <div className="w-1/4 flex justify-left items-center">
@@ -20,8 +20,9 @@ const NavBar = () => {
       <div className="w-1/2 flex justify-end items-center">
         <div className="w-1/2 flex justify-end items-center space-x-4">
           <Link href="/">Home</Link>
+          <Link href="/search">Search</Link>
+          <Link href="/deals">Deals</Link>
           <Link href="/blog">Blog</Link>
-          <span>Instagram</span>
           <Link href="/login">
             <button className="text-custom-one bg-custom-three hover:bg-custom-four font-medium rounded-lg text-sm px-4 py-2">
               Login
