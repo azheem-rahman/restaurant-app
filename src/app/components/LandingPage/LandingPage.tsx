@@ -5,25 +5,27 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const LandingPage = () => {
   const dealRepeat = [1, 2, 3, 4];
-  const cardRepeat = [1, 2, 3, 4, 5];
+  const cardRepeat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
     <div className="w-full">
       <div className="h-80 w-full grid grid-cols-1 place-items-center">
         <div className="col-span-1">
-          <p className="text-4xl">Discover your next culinary adventure</p>
-          <p className="text-xl text-right">
+          <p className="text-4xl text-custom-four">
+            Discover your next culinary adventure
+          </p>
+          <p className="text-xl text-right text-custom-three">
             unearth hidden delights, one bite at a time
           </p>
         </div>
       </div>
-      <div className="w-full h-full grid grid-cols-3 gap-4">
+      <div className="w-full h-full grid grid-cols-3 gap-4 pb-4">
         <div className="col-span-2 h-100">
           <img className="h-full" src={ForkAndSpoon.src} alt="fork-and-spoon" />
         </div>
 
         <div className="col-span-1 pr-6 pr-8">
-          <div className="m-4">
+          <div className="pl-4 pr-4">
             <div className="flex">
               <p className="text-2xl font-bold text-custom-four">FeastFinder</p>
               <SearchIcon className="text-4xl font-bold text-custom-four" />
@@ -85,7 +87,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="m-8 p-4 h-2/4 rounded-2xl bg-custom-two border border-custom-two">
+      <div className="my-20 mx-8 p-4 h-2/4 rounded-3xl bg-custom-two border border-custom-two">
         <div className="p-4">
           <p className="text-2xl text-custom-five font-bold">Browse List</p>
         </div>
