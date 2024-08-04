@@ -10,7 +10,7 @@ const page = () => {
         <NavBar />
         <hr className="w-full mt-2 mb-2 border border-gray-400" />
       </header>
-      <main>
+      <main className="my-10 mx-4">
         <Login />
       </main>
       <footer className="m-4">
