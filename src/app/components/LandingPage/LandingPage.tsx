@@ -225,7 +225,7 @@ const LandingPage = () => {
                 {/* Operating Hours */}
                 {openingHoursFields.map((item, index) => {
                   return (
-                    <div className="grid grid-cols-2 gap-4">
+                    <div key={item.dayOpen} className="grid grid-cols-2 gap-4">
                       <div className="col-span-1 w-full flex gap-4 justify-start items-center">
                         <CalendarTodayOutlined />
                         <select
@@ -348,7 +348,10 @@ const LandingPage = () => {
         <div className="p-4 grid auto-cols-[20rem] grid-flow-col gap-8 overflow-x-auto">
           {restaurantData.map((item) => {
             return (
-              <div className="max-w-sm rounded-2xl border border-custom-three bg-custom-three text-custom-five shadow-lg">
+              <div
+                key={item.name}
+                className="max-w-sm rounded-2xl border border-custom-three bg-custom-three text-custom-five shadow-lg"
+              >
                 <img
                   src={RestaurantOnePhoto.src}
                   alt="restaurant"
@@ -371,7 +374,10 @@ const LandingPage = () => {
                   <div className="flex-wrap">
                     {item.cuisineType.map((type) => {
                       return (
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-custom-five mr-2 mb-2">
+                        <span
+                          key={type}
+                          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-custom-five mr-2 mb-2"
+                        >
                           {type}
                         </span>
                       );

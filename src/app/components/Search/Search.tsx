@@ -173,7 +173,10 @@ const Search = () => {
         >
           {resultsList.map((result) => {
             return (
-              <div className="rounded-2xl border border-custom-three bg-custom-two text-custom-five shadow-lg flex mx-8 h-36">
+              <div
+                key={result.name}
+                className="rounded-2xl border border-custom-three bg-custom-two text-custom-five shadow-lg flex mx-8 h-36"
+              >
                 <img
                   src={BowlAndCutleryPhoto.src}
                   alt="restaurant"
@@ -200,7 +203,10 @@ const Search = () => {
                   <div className="flex-wrap mt-2">
                     {result.cuisineType.map((type) => {
                       return (
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-custom-five mr-2 mb-2">
+                        <span
+                          key={type}
+                          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-custom-five mr-2 mb-2"
+                        >
                           {type}
                         </span>
                       );
