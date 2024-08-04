@@ -21,8 +21,6 @@ const NavBar = () => {
         <div className="w-1/2 flex justify-end items-center space-x-4">
           <Link href="/">Home</Link>
           <Link href="/search">Search</Link>
-          <Link href="/deals">Deals</Link>
-          <Link href="/blog">Blog</Link>
           <Link href="/login">
             <button className="text-custom-one bg-custom-three hover:bg-custom-four font-medium rounded-lg text-sm px-4 py-2">
               Login
