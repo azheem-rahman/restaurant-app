@@ -133,7 +133,7 @@ const LandingPage = () => {
       <div className="w-full h-full grid grid-cols-3 gap-4 pb-4">
         {/* Left Side */}
         <div className="col-span-2 h-100">
-          <img className="h-full" src={ForkAndSpoon.src} alt="fork-and-spoon" />
+          <img className="" src={ForkAndSpoon.src} alt="fork-and-spoon" />
         </div>
 
         {/* Right Side */}
