@@ -44,7 +44,7 @@ const Login = () => {
                 <LockOpenOutlined className="mr-2 text-custom-five" />
                 <input
                   className="my-4 p-2 w-full rounded-xl"
-                  placeholder="Password"
+                  placeholder="password"
                 />
               </div>
               <button className="bg-custom-one text-custom-five hover:bg-custom-three hover:text-custom-one my-2 p-2 rounded-xl">
@@ -127,9 +127,10 @@ const Login = () => {
               <div className="flex-grow border-t border-custom-five"></div>
             </div>
 
-            <div className="my-4">
-              <Google className="text-custom-three" />
-              <button className="bg-white rounded-lg">
+            {/* Google Button */}
+            <div className="my-4 flex justify-center">
+              <button className="bg-white my-2 p-2 rounded-xl">
+                <Google className="text-custom-three pr-2" />
                 Sign in with google
               </button>
             </div>
@@ -140,11 +141,15 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="bg-custom-two grid grid-cols-3 place-items-center">
+    <div className="flex justify-center items-center">
+      <div className="bg-custom-two grid grid-cols-3 place-items-center rounded-2xl">
         {/* Left-side */}
         <div className="col-span-2 w-full">
-          <img src={LoginSidePhoto.src} alt="login-side" />
+          <img
+            className="rounded-l-2xl"
+            src={LoginSidePhoto.src}
+            alt="login-side"
+          />
         </div>
 
         {/* Right-side */}
