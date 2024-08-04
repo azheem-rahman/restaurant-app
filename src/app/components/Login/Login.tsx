@@ -58,7 +58,7 @@ const Login = () => {
           </div>
           <div className="text-center text-custom-five">
             <p>
-              Don't have an account?{" "}
+              Don't have an account?
               <span
                 className="underline hover:cursor-pointer text-custom-four"
                 onClick={() => setShowLogin(false)}
@@ -111,7 +111,7 @@ const Login = () => {
 
             <div className="my-2 text-center text-custom-five">
               <p>
-                Already have an account?{" "}
+                Already have an account?
                 <span
                   className="underline hover:cursor-pointer text-custom-four"
                   onClick={() => setShowLogin(true)}
